@@ -6,13 +6,10 @@ Created on Sun Aug 25 17:43:35 2019
 """
 
 class Solution:
-    def decodeAtIndex(self, S: str, K: int) -> str:
-        
-        st = ''
-        st_len = 0
+    def decodeAtIndex(self, S: str, K: int) -> str:        
+        st, st_len='', 0
         st_s, st_l, st_long=[''], [0], [0]
         i= 0
-
         while i<len(S) and st_long[-1]<K:
             if S[i].isalpha():
                 st += S[i]
